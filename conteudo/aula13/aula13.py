@@ -2,6 +2,10 @@
 Quantidade de caracteres - LEN
 """
 usuario = input('Digite seu usuário: ')
-qtd_caracteres = len(usuario)
+senha = input('Digite sua senha: ')
+qtd_caracteres = len(senha)
 
-print(usuario, qtd_caracteres, type(usuario))
+if qtd_caracteres < 8:
+  print('Você precisa digitar pelo menos 8 caracteres.')
+else:
+  print('Cadastro efetuado com sucesso.')
